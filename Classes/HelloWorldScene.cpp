@@ -46,55 +46,55 @@ bool HelloWorld::init()
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     
     
-    m_bg1_0 = Sprite::create("light1_bg_0.png");
+    m_bg1_0 = Sprite::create("light_app/light1_bg_0.png");
     m_bg1_0->setAnchorPoint(Vec2(0,0));
     m_bg1_0->setPosition(Vec2(0,0));
     this->addChild(m_bg1_0,0);
     
-    m_bg1_1 = Sprite::create("light1_bg_1.png");
+    m_bg1_1 = Sprite::create("light_app/light1_bg_1.png");
     m_bg1_1->setAnchorPoint(Vec2(0,0));
     m_bg1_1->setPosition(Vec2(0,0));
     this->addChild(m_bg1_1,0);
     
 
-    m_bg2_0 = Sprite::create("light2_bg_0.png");
+    m_bg2_0 = Sprite::create("light_app/light2_bg_0.png");
     m_bg2_0->setAnchorPoint(Vec2(0,0));
     m_bg2_0->setPosition(Vec2(0,0));
     this->addChild(m_bg2_0,0);
     
-    m_bg2_1 = Sprite::create("light2_bg_1.png");
+    m_bg2_1 = Sprite::create("light_app/light2_bg_1.png");
     m_bg2_1->setPosition(Vec2(0,0));
     m_bg2_1->setAnchorPoint(Vec2(0,0));
     this->addChild(m_bg2_1,0);
     
 
-    m_light1_n = Sprite::create("light1_lt_0.png");
+    m_light1_n = Sprite::create("light_app/light1_lt_0.png");
     m_light1_n->setPosition(Vec2(origin.x + visibleSize.width/2,
                                  origin.y + visibleSize.height/2));
     this->addChild(m_light1_n,1);
     
-    m_light1_0 = Sprite::create("light1_lt_1.png");
+    m_light1_0 = Sprite::create("light_app/light1_lt_1.png");
     m_light1_0->setPosition(Vec2(origin.x + visibleSize.width/2,
                                  origin.y + visibleSize.height/2));
     this->addChild(m_light1_0,1);
     
-    m_light1_1 = Sprite::create("light1_lt_2.png");
+    m_light1_1 = Sprite::create("light_app/light1_lt_2.png");
     m_light1_1->setPosition(Vec2(origin.x + visibleSize.width/2,
                                  origin.y + visibleSize.height/2));
     this->addChild(m_light1_1,1);
     
     
-    m_light2_line = Sprite::create("light2_line.png");
+    m_light2_line = Sprite::create("light_app/light2_line.png");
     m_light2_line->setPosition(Vec2(origin.x + 200 + visibleSize.width/2,
                                     origin.y +  800 + visibleSize.height/2));
     this->addChild(m_light2_line,1);
     
-    m_light2_0 = Sprite::create("light2_light_0.png");
+    m_light2_0 = Sprite::create("light_app/light2_light_0.png");
     m_light2_0->setPosition(Vec2(origin.x + visibleSize.width/2 + 200,
                                  origin.y + visibleSize.height/2 + 300));
     this->addChild(m_light2_0,1);
     
-    m_light2_1 = Sprite::create("light2_light_1.png");
+    m_light2_1 = Sprite::create("light_app/light2_light_1.png");
     m_light2_1->setPosition(Vec2(origin.x + visibleSize.width/2 + 200,
                                  origin.y + visibleSize.height/2 + 250));
     this->addChild(m_light2_1,1);

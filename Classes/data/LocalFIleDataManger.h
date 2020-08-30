@@ -39,7 +39,7 @@ public:
     void saveUserData();
     
     
-    LightType m_lightTypeData; //当前灯状态
+    LightTypeST m_lightTypeData; //当前灯状态
     
     /**
      * Init LocalFIleDataManger

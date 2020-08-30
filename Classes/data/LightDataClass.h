@@ -21,6 +21,6 @@ public:
     LightDataClass();
     virtual bool init();
     static LightDataClass* create();
-    LightType m_lightTypeData;
+    LightTypeST m_lightTypeData;
 };
 #endif /* defined(__light__LightDataClass__) */

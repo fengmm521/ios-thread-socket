@@ -14,6 +14,15 @@ AppDelegate::~AppDelegate()
 {
 }
 
+void AppDelegate::initGLContextAttrs()
+{
+    // set OpenGL context attributes: red,green,blue,alpha,depth,stencil
+    GLContextAttrs glContextAttrs = {8, 8, 8, 8, 24, 8};
+ 
+    GLView::setGLContextAttrs(glContextAttrs);
+}
+
+
 bool AppDelegate::applicationDidFinishLaunching() {
     // initialize director
     //cocos2d::ZipUtils::setPvrEncryptionKeyPart(2 , kImagePassWord2);
@@ -22,7 +31,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     //cocos2d::ZipUtils::setPvrEncryptionKeyPart(3 , kImagePassWord3);
     auto glview = director->getOpenGLView();
     if(!glview) {
-        glview = GLView::create("My Game");
+        glview = GLViewImpl::create("My Game");
         director->setOpenGLView(glview);
         
     }

@@ -27,7 +27,7 @@ struct LightType_ST
     bool lightType;   //当前灯是开是关
 };
 
-typedef struct LightType_ST LightType;
+typedef struct LightType_ST LightTypeST;
 
 //示例枚举，不使用时可删除
 enum DemoENUM
